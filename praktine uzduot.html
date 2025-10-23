@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Video montavimo paslaugos</title>
+  <style>
+    
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;font-family:Inter, Arial, Helvetica, sans-serif;background:#f5f7fb;color:#112}
+    a{color:#0b5edf}
+
+    #page{max-width:1100px;margin:20px auto;background:#ffffff;border-radius:10px;box-shadow:0 8px 24px rgba(16,24,40,0.06);overflow:hidden}
+
+    .header{background:linear-gradient(90deg,#e6f0ff,#f6fbff);border-bottom:1px solid #e6f2ff;padding:14px 18px}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;max-width:1040px;margin:0 auto}
+    .brand{font-weight:800;color:#0b5edf;font-size:1.2rem}
+    .nav-list{list-style:none;display:flex;gap:18px}
+    .nav-list a{display:inline-block;padding:8px 10px;color:#0b5edf;text-decoration:none;border-radius:8px;font-weight:600}
+    .nav-list a:hover{background:#eef6ff}
+
+    .hero{padding:28px 18px;background:linear-gradient(180deg,#f3f8ff,#ffffff)}
+    .hero-inner{max-width:1040px;margin:0 auto}
+    .hero h1{font-size:1.6rem;color:#0b3c7a;margin-bottom:6px}
+    .hero-sub{color:#374151}
+
+    .flex-container{display:flex;gap:18px;padding:18px;max-width:1040px;margin:0 auto}
+    .content{flex:1;padding:0}
+    .sidebar{flex:0 1 300px;padding:0}
+
+    .card{background:#ffffff;border:1px solid #eef5ff;padding:14px;border-radius:10px;box-shadow:0 2px 8px rgba(11,94,223,0.04)}
+    .article.card{margin-bottom:12px}
+
+    .features{margin:10px 0 14px 1.1rem;padding-left:0}
+    .features li{margin:8px 0;padding-left:10px;position:relative}
+    .features li:before{content:'•';position:absolute;left:-18px;color:#0b5edf;font-weight:800}
+    .workflow{counter-reset:step;list-style:none;padding-left:0;margin-top:10px}
+    .workflow li{counter-increment:step;margin:12px 0;padding-left:40px;position:relative}
+    .workflow li:before{content:counter(step);position:absolute;left:0;top:0;background:#0b5edf;color:#fff;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700}
+
+    table.schedule{width:100%;border-collapse:collapse;margin-top:10px;background:#fff;font-size:0.95rem}
+    table.schedule caption{text-align:left;font-weight:700;margin-bottom:8px}
+    table.schedule th, table.schedule td{border:1px solid #e6eaf8;padding:10px;text-align:left}
+    table.schedule thead th{background:#f1f7ff;color:#0b5edf}
+
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:12px}
+    .gallery img{width:100%;height:140px;object-fit:cover;border-radius:8px;border:1px solid #eef4ff;display:block}
+
+    .aside-list{padding-left:18px;margin-top:8px}
+    .aside-list li{margin:6px 0}
+
+    .theme-demo{color:#b22222;padding:10px;border-radius:6px;background:#fff6f6;border:1px solid #fdecea}
+    .theme-demo .inherited{color:inherit;font-weight:700}
+
+    .cascade-sample{color:rebeccapurple}
+    .cascade-sample.force{color:#059669 !important}
+
+    .footer{padding:14px;text-align:center;border-top:1px solid #eef4ff;background:#fbfdff;color:#6b7280;font-size:0.95rem;border-radius:0 0 10px 10px}
+
+    @media screen and (max-width:900px){
+      .flex-container{flex-direction:column;padding:12px}
+      .sidebar{order:2}
+      .content{order:1}
+      .nav-list{flex-wrap:wrap;gap:8px}
+      .gallery img{height:120px}
+    }
+  </style>
+</head>
+<body>
+  <div id="page">
+    <header class="header">
+      <div class="header-inner">
+        <div id="brand" class="brand">Video montavimo paslaugos</div>
+        <nav id="navigation">
+          <ul id="nav-list" class="nav-list">
+            <li><a href="#home">Pagrindinis</a></li>
+            <li><a href="#about">Apie</a></li>
+            <li><a href="#gallery">Galerija</a></li>
+            <li><a href="#contact">Kontaktai</a></li>
+            <li><a href="#explain">Paaiškinimai</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <h1>Profesionalus video montažas</h1>
+        <p class="hero-sub">Spalvų korekcija, garso tvarkymas, titrai ir finalizacija — paruošime Jūsų turinį publikacijai.</p>
+      </div>
+    </section>
+
+    <main class="flex-container" role="main">
+      <section id="content" class="content">
+        <article class="article card">
+          <h2>Aprašymas</h2>
+          <p>Mūsų paslaugos aprėpia visą montažo ciklą nuo medžiagos peržiūros iki parengto finalo.</p>
+
+          <h3>Pagrindinės paslaugos</h3>
+          <ul class="features">
+            <li>Montažas (YouTube, socialiniai tinklai, renginiai)</li>
+            <li>Spalvų korekcija (color grading)</li>
+            <li>Garso restauracija ir miksavimas</li>
+            <li>Titrai, animacijos ir motion-graphics</li>
+          </ul>
+
+          <h3>Tvarkaraštis ir kainos</h3>
+          <table class="schedule">
+            <caption>Paslaugų trukmė ir orientacinės kainos</caption>
+            <thead>
+              <tr><th>Paslauga</th><th>Trukmė</th><th>Kaina nuo</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Greitas montažas (≤10 min)</td><td>1–2 d.</td><td>25€</td></tr>
+              <tr><td>Standartinis montažas (≤30 min)</td><td>3–5 d.</td><td>85€</td></tr>
+              <tr><td>Color grading</td><td>1–2 d.</td><td>50€</td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <section id="gallery" class="card">
+          <h2>Galerija</h2>
+          <p>Spustelkite, kad atidarytumėte didesnį vaizdą.</p>
+          <div id="image-block" class="gallery">
+            <a href="https://picsum.photos/seed/v1/1200/800" target="_blank"><img src="https://picsum.photos/seed/v1/600/400" alt="Darbas 1"></a>
+            <a href="https://picsum.photos/seed/v2/1200/800" target="_blank"><img src="https://picsum.photos/seed/v2/600/400" alt="Darbas 2"></a>
+            <a href="https://picsum.photos/seed/v3/1200/800" target="_blank"><img src="https://picsum.photos/seed/v3/600/400" alt="Darbas 3"></a>
+            <a href="https://picsum.photos/seed/v4/1200/800" target="_blank"><img src="https://picsum.photos/seed/v4/600/400" alt="Darbas 4"></a>
+            <a href="https://picsum.photos/seed/v5/1200/800" target="_blank"><img src="https://picsum.photos/seed/v5/600/400" alt="Darbas 5"></a>
+            <a href="https://picsum.photos/seed/v6/1200/800" target="_blank"><img src="https://picsum.photos/seed/v6/600/400" alt="Darbas 6"></a>
+          </div>
+        </section>
+      </section>
+
+      <aside id="sidebar" class="sidebar card" aria-labelledby="contact">
+        <h3 id="contact">Kontaktai</h3>
+        <p>VMont studija<br/>Vilnius, Lietuva</p>
+        <p>Tel.: +370 600 00000<br/>Email: <a href="mailto:info@vmont.lt">info@vmont.lt</a></p>
+
+        <h4>Greitos nuorodos</h4>
+        <ol class="aside-list">
+          <li><a href="#gallery">Galerija</a></li>
+          <li><a href="#about">Apie</a></li>
+          <li><a href="#explain">Paaiškinimai</a></li>
+        </ol>
+        </div>
+      </aside>
+    </main>
+
+    <section id="explain" class="panel card" style="max-width:1040px;margin:16px auto">
+      <h2>Paaiškinimai apie selektorius ir reikalavimus</h2>
+      <p><strong>Klasės (class)</strong> — daugkartiniam grupavimui, pvz., <code>.card</code>.</p>
+      <p><strong>ID</strong> — unikalus elementui puslapyje, pvz., <code>#page</code>, <code>#navigation</code>.</p>
+      <h3>inherit ir !important</h3>
+      <p><code>inherit</code> – Tai mechanizmas, kuriuo viena klasė gali paveldėti kitos klasės ypatybes; <code>!important</code> – priverčia taisyklę laimėti prieš kitas.</p>
+    </section>
+
+    <footer class="footer">
+      <p>© 2025 VMont — Video montavimo paslaugos. Visos teisės saugomos.</p>
+    </footer>
+  </div>
+</body>
+</html>
