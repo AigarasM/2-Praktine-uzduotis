@@ -1,0 +1,2 @@
+Jonaitis Jonas 1200 10 Petrauskas Petras 1500 5 Kazlauskienė Ona 980 15
+Sabonis Arvydas 2000 7
